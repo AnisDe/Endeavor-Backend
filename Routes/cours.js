@@ -10,3 +10,5 @@ router.post('/addcour', cours.addCours);
 router.put('/editcour/:id', cours.editCours);
 
 router.delete('/deleteCour/:id', cours.deleteCours);
+
+module.exports = router;

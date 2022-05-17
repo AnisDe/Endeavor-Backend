@@ -1,5 +1,5 @@
-const Cour = require('./models/cours');
-const User = require('./models/user');
+const Cour = require('../models/cours');
+const User = require('../models/user');
 
 // module.exports.addCours = async (req, res) => {
  

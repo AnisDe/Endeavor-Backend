@@ -7,10 +7,10 @@ const passport = require('passport');
 const local_auth = require('passport-local')
 const session = require('express-session');
 const User = require('./models/user');
-const userRoutes = require('./routes/users');
-const courRoutes = require('./routes/cours');
-const postRoutes = require('./routes/posts');
-const questionRoutes = require('./routes/questions');
+const userRoutes = require('./Routes/users');
+const courRoutes = require('./Routes/cours');
+const postRoutes = require('./Routes/posts');
+const questionRoutes = require('./Routes/questions');
 const mongoSanitize = require('express-mongo-sanitize');
 
 
@@ -53,6 +53,7 @@ app.use(mongoSanitize());
 passport.use(new local_auth(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
+
 
 
 

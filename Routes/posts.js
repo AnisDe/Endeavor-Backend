@@ -6,3 +6,5 @@ const posts = require('../controllers/posts');
 router.post('/addPost', posts.AddPost);
 
 router.get('/getAllPost', posts.listAllPost);
+
+module.exports = router;

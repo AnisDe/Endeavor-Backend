@@ -5,7 +5,6 @@ const nodemailer = require("nodemailer");
 const async = require("async");
 const crypto = require("crypto");
 const middleware = require("../middleware");
-const Game = require("../models/game");
 
 
 //////SIGN UP

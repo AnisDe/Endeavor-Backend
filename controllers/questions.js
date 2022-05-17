@@ -1,4 +1,4 @@
-const Questions = require('./models/questions');
+const Questions = require('../models/questions');
 
 
 
